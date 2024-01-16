@@ -1,29 +1,30 @@
 let handler = async (m, { conn, command, text, usedPrefix, participants }) => {
-    if (!text) throw "Mention whose you want to check character"
+    if (!text) throw "menciona a alguien para ver su personalidad"
     const mentionedUser = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : args[2] ? (args[2].replace(/[@ .+-]/g, '') + '@s.whatsapp.net') : ''
  const userChar = [
-      "Sigma",
-      "Generous",
+      "Smegma",
+      "Generosa",
       "Grumpy",
-      "Overconfident",
-      "Obedient",
-      "Good",
+      "leal",
+      "Obediente",
+      "Buena",
+      "que nombre de puto w",
       "Simp",
-      "Kind",
-      "Patient",
-      "Pervert",
-      "Cool",
-      "Helpful",
-      "Brilliant",
+      "Pendejo",
+      "Paciente",
+      "Pervertido",
+      "Chido",
+      "Mañoso",
+      "Brillante",
       "Sexy",
-      "Hot",
-      "Gorgeous",
-      "Cute",
+      "Caliente",
+      "Gorgeous (mi ingles no llega tan lejos)",
+      "Lindo",
     ]
     const userCharacterSeletion =
       userChar[Math.floor(Math.random() * userChar.length)]
 
-    let message = `Character of @${mentionedUser.split("@")[0]}  is *${userCharacterSeletion}* 🔥⚡`
+    let message = `esta persona es @${mentionedUser.split("@")[0]}  muy *${userCharacterSeletion}* 🔥⚡`
     
     conn.sendMessage(m.chat, { text: message, mentions: [mentionedUser] }, { quoted: m })
     

@@ -13,13 +13,13 @@ let handler = async (m, { conn, text }) => {
   }
 
   const message = `
-*Name:* ${json.name}
+*Nombre:* ${json.name}
 *ID:* ${json.id}
-*Type:* ${json.type}
-*Abilities:* ${json.abilities}
-*Height:* ${json.height}
-*Weight:* ${json.weight}
-*Description:* ${json.description}
+*Tipo:* ${json.type}
+*Habilidades:* ${json.abilities}
+*altura:* ${json.height}
+*peso:* ${json.weight}
+*Descripcion:* ${json.description}
 `;
 
   conn.sendMessage(m.chat, { text: message }, 'extendedTextMessage', { quoted: m });
