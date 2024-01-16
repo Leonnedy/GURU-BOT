@@ -7,8 +7,8 @@ import axios from 'axios'
 
 
 global.owner = [
-  ['917605902011', 'GURU', true],
-  ['6281255369012', 'Ash', true], 
+  ['18292097057', 'Leo', true],
+  ['18094511361', 'Laura', true], 
   [''] 
 ] //Number of owners
 
